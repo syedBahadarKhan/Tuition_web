@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div className="bg-gradient-to-r from-blue-50 to-white min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8">
@@ -18,9 +18,11 @@ const Home = () => {
 
         {/* ✅ Button layout: stack on mobile, inline on larger screens */}
         <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+          <Link to="/courses">
           <button className="bg-blue-600 text-white px-6 py-3 rounded-lg text-base sm:text-lg font-medium hover:bg-blue-700 transition w-full sm:w-auto">
             Get Started
           </button>
+          </Link>
           <button className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg text-base sm:text-lg font-medium hover:bg-blue-50 transition w-full sm:w-auto">
             Learn More
           </button>

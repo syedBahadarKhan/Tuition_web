@@ -8,6 +8,7 @@ import About from './components/About'
 import Courses from './components/Courses'
 import courseList from './index.js';
 import Pricing from './components/Pricing.jsx'
+import Mathdata from './pages/mathdata.jsx'
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -23,6 +24,8 @@ function App() {
       <Route path="/about" element={<About/>}/>
      <Route path="/courses" element={<Courses courses={courseList} />} />
      <Route path="/pricing" element={<Pricing/>} />
+      <Route path="/mathdata" element={<Mathdata/>} />
+      
      </Routes>
       <Footer/>
     </BrowserRouter>

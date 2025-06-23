@@ -30,9 +30,11 @@ const Courses = ({ courses }) => {
 
               {/* ✅ Buttons stacked on mobile, side-by-side on larger screens */}
               <div className="mt-4 flex flex-col sm:flex-row gap-3">
+                <Link to="/mathdata">
                 <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm w-full sm:w-auto">
                   Learn More
                 </button>
+                </Link>
                 <Link to="/register" className="w-full sm:w-auto">
                   <button className="bg-green-600 hover:bg-green-800 text-white px-4 py-2 rounded-full text-sm w-full sm:w-auto">
                     Contact Us
